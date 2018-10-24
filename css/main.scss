@@ -1,0 +1,52 @@
+.main-container{
+    width: 40%;
+    height: 500px;
+    background-color: gray;
+    margin:auto auto;
+    display: flex;
+    #start-button{
+        width: 30%;
+        height: 40px;
+        background-color: black;
+        font-size: 2rem;
+        text-align: center;
+        margin:0 auto;
+        color:white;
+        &:hover{
+            background-color: gray;
+        }
+    }
+    .button-container{
+        $color-1:red;
+        $color-2:green;
+        $color-3:white;
+        $color-4:purple;
+        $color-5:yellow;
+        $color-6:blue;
+        $color-7:orange;
+        $color-8:skyblue;
+        $color-9:gray;
+
+        width: 80%;
+        height:400px;
+        background-color: black;
+        margin:auto auto;
+        background-color: aqua;
+        display: inline-block;
+        @for $i from 1 through 9 {
+
+            .button-#{$i} {
+                width: 32%;
+                height:130px;
+                float: left;
+                background-color:red;
+                text-align: center;
+                justify-content: center;
+                border: solid 2px gray;
+                &:hover{
+                    font-size: 2rem;
+                }
+        }
+        }
+    }
+}

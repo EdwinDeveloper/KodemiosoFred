@@ -1,0 +1,115 @@
+.main-container {
+  width: 40%;
+  height: 500px;
+  background-color: gray;
+  margin: auto auto;
+  display: flex; }
+  .main-container #start-button {
+    width: 30%;
+    height: 40px;
+    background-color: black;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    color: white; }
+    .main-container #start-button:hover {
+      background-color: gray; }
+  .main-container .button-container {
+    width: 80%;
+    height: 400px;
+    background-color: black;
+    margin: auto auto;
+    background-color: aqua;
+    display: inline-block; }
+    .main-container .button-container .button-1 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-1:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-2 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-2:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-3 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-3:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-4 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-4:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-5 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-5:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-6 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-6:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-7 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-7:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-8 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-8:hover {
+        font-size: 2rem; }
+    .main-container .button-container .button-9 {
+      width: 32%;
+      height: 130px;
+      float: left;
+      background-color: red;
+      text-align: center;
+      justify-content: center;
+      border: solid 2px gray; }
+      .main-container .button-container .button-9:hover {
+        font-size: 2rem; }
+
+/*# sourceMappingURL=main.css.map */
