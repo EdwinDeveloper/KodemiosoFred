@@ -1,31 +1,33 @@
 var $numeroRandom=0;
 var $arrayApp=[];
-var contador=0;
+var $arrayUser=[];
+var $contadorJuego=0;
+var $contadorUser=0;
 var tiempo=1000;
+var bandera=0;
 function start(){
     var $minimo = 1,$maximo=9;
 
         //obtenemos el numero random
-        $numeroRandom = getRandom($minimo,$maximo);
+    
          //console.log($numeroRandom);
 
          //Añadimos el nuevo valor al arreglos
-        $arrayApp.push($numeroRandom);
-        console.log($arrayApp);
         
+        console.log($arrayApp);  
+        //console.log($numeroRandom); 
         let intervalo = setInterval(()=>{
-            $arrayApp.forEach(($element)=>{
-            tiempo=tiempo+1000;
-            
-                //$('.boton').css("background-color","red");
-                //console.log($element);
-                switchfunction($element);
-                console.log($element);
-            });
-        },1000);
-
-        clearInterval(intervalo);
-
+            $contadorJuego++; 
+                if($contadorJuego<5){
+                    $numeroRandom = getRandom($minimo,$maximo);
+                        switchfunction($numeroRandom);
+                        $arrayApp.push($numeroRandom);
+                        console.log($arrayApp);
+                }else{
+                    clearInterval(intervalo);
+                }               
+        },2000);
+        //clearInterval(intervalo);
 }
 function switchfunction($element){
     switch($element){
@@ -95,6 +97,15 @@ function iluminar(numeroRandom){
     },1000);
 }
 $('.boton').on('click',(e)=>{
-    var $seleccionado = $(e.target).text();
+    var $a =$(e.target).text();
+    $arrayUser.push(parseInt($a));
+    if($a==$arrayApp[$contadorUser]){
+        console.log("Bien Amigo");
+        console.log($contadorUser);
+    }else{
+        console.log("Game Over");
+        console.log($a+"  "+$arrayApp[$contadorUser]);
+    }
+    $contadorUser++;
 });
 
