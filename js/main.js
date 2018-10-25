@@ -23,7 +23,7 @@ function start(){
         $arrayApp.push($numeroRandom);
         let intervalo = setInterval(()=>{
             $contadorJuego++;
-            console.log("ciclo : array "+$contadorJuego); 
+            //console.log("ciclo : array "+$contadorJuego); 
                 if($contadorJuego<=$contadorEnAumento){
                         switchfunction($arrayApp[$contadorJuego-1]);
                 }else{
@@ -104,7 +104,6 @@ $('.boton').on('click',(e)=>{
     let $divMensaje=$('.mensaje');
     //if para verificar si el usuario introduce un valor correcto
     if($a==$arrayApp[$contadorUser]){
-        //$contadorJuego++;
         //Añadimos mensaje de correcto
         $divMensaje.html('BIEN AMIGO');
         //Añadimos la clase de correcto
@@ -118,6 +117,9 @@ $('.boton').on('click',(e)=>{
         },500);
     }else{
         //Mensaje error en caso de fallo
+        $contadorUser=0;
+        $contadorJuego=0;
+        $arrayApp=[];
         $divMensaje.html('GAME OVER');
         //Añadimos la clase error en caso de fallo del usuario
         $divMensaje.addClass('mensaje-fail');
@@ -125,16 +127,22 @@ $('.boton').on('click',(e)=>{
     }
     //Nuestro contador para aumentar la posicion
     $contadorUser++;
+
+    // console.log("Contador user : "+$contadorUser);
+    // console.log("Contador Aumento : "+$contadorEnAumento);
+    // console.log("a : "+$a+ "  "+$arrayApp[$contadorUser-1]);
     if($contadorUser===$contadorEnAumento){
         $contadorEnAumento++;
         $contadorUser=0;
         $contadorJuego=0;
-        $('.main-container').addClass('.extra-main-container');
+        $('.main-container').addClass('extra-main-container');
         setTimeout(()=>{
-            $('.main-container').removeClass('.extra-main-container');
+            $('.main-container').removeClass('extra-main-container');
             start();
-            console.log("Segundo ciclo");
+            console.log("ciclo : "+$contadorEnAumento);
         },1000);
-    }
+    }else{
+        console.log("Fin del juego");
+    };
 });
 
