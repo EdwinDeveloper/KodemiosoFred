@@ -2,7 +2,7 @@ body{
     text-align: center;
     #start-button,
     #start-test{
-        width: 200px;
+        width: 250px;
         height: 40px;
         background-color: black;
         font-size: 2rem;
@@ -10,8 +10,12 @@ body{
         margin:0 auto;
         color:white;
         &:hover{
+            cursor: pointer;
             background-color: gray;
         }
+    }
+    .start-again{
+        background-color: orange;
     }
 .mensaje{
     width: 40%;

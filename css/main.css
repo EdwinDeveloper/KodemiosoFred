@@ -3,7 +3,7 @@ body {
 }
 body #start-button,
 body #start-test {
-  width: 200px;
+  width: 250px;
   height: 40px;
   background-color: black;
   font-size: 2rem;
@@ -13,7 +13,11 @@ body #start-test {
 }
 body #start-button:hover,
 body #start-test:hover {
+  cursor: pointer;
   background-color: gray;
+}
+body .start-again {
+  background-color: orange;
 }
 body .mensaje {
   width: 40%;

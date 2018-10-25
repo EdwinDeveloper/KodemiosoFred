@@ -84,25 +84,12 @@ function switchfunction($element){
 function getRandom($min, $max) {
     return Math.trunc( Math.random()* ($max - $min) + $min);
 }
-$('#start-button').on('click',()=>{
-            start();
-});
-$('#start-test').on('click',()=>{
-    $('.boton').addClass('nueva-clase');
-    setTimeout(()=>{
-        $('.boton').removeClass('nueva-clase');
-    },1000);
-});
-function iluminar(numeroRandom){
-
-    setTimeout(()=>{
-
-    },1000);
-}
 $('.boton').on('click',(e)=>{
     var $a =$(e.target).text();
     let $divMensaje=$('.mensaje');
     //if para verificar si el usuario introduce un valor correcto
+    console.log("Contador usuario : "+$contadorUser);
+    console.log("a : "+$a+" arrayApp : "+$arrayApp[$contadorUser]);
     if($a==$arrayApp[$contadorUser]){
         //Añadimos mensaje de correcto
         $divMensaje.html('BIEN AMIGO');
@@ -121,6 +108,8 @@ $('.boton').on('click',(e)=>{
         $contadorJuego=0;
         $arrayApp=[];
         $divMensaje.html('GAME OVER');
+         $('#start-button').html("START AGAIN");
+         $('#start-button').css('background','orange');
         //Añadimos la clase error en caso de fallo del usuario
         $divMensaje.addClass('mensaje-fail');
         //Comparamos uno por uno la seleccion del usuario y los del array del jugo
@@ -128,8 +117,8 @@ $('.boton').on('click',(e)=>{
     //Nuestro contador para aumentar la posicion
     $contadorUser++;
 
-    // console.log("Contador user : "+$contadorUser);
-    // console.log("Contador Aumento : "+$contadorEnAumento);
+    console.log("Contador user : "+$contadorUser);
+    console.log("Contador Aumento : "+$contadorEnAumento);
     // console.log("a : "+$a+ "  "+$arrayApp[$contadorUser-1]);
     if($contadorUser===$contadorEnAumento){
         $contadorEnAumento++;
@@ -142,7 +131,33 @@ $('.boton').on('click',(e)=>{
             console.log("ciclo : "+$contadorEnAumento);
         },1000);
     }else{
-        console.log("Fin del juego");
+        //console.log("Fin del juego");
     };
 });
+$('#start-button').on('click',()=>{
+    $contadorUser=0;
+    console.log("Start contador User : "+$contadorUser);
+    $arrayApp=[];
+    $contadorEnAumento=1;
+    $('.mensaje').removeClass('mensaje-fail');
+    $('.mensaje').html('Bienvenido');
+    console.log("Contador Boton Start Juego : "+$contadorJuego);
+     $('#start-button').html("START");
+     $('#start-button').css('background','black');
+    // $contadorUser=0;
+    // $contadorJuego=0;
+    start();
+});
+$('#start-test').on('click',()=>{
+    $('.boton').addClass('nueva-clase');
+    setTimeout(()=>{
+        $('.boton').removeClass('nueva-clase');
+    },1000);
+});
+function iluminar(numeroRandom){
+
+    setTimeout(()=>{
+
+    },1000);
+}
 
