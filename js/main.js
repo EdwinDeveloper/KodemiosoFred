@@ -4,19 +4,27 @@ var contador=0;
 var tiempo=1000;
 function start(){
     var $minimo = 1,$maximo=9;
+
+        //obtenemos el numero random
         $numeroRandom = getRandom($minimo,$maximo);
          //console.log($numeroRandom);
+
+         //Añadimos el nuevo valor al arreglos
         $arrayApp.push($numeroRandom);
         console.log($arrayApp);
-        $arrayApp.forEach(($element)=>{
+        
+        let intervalo = setInterval(()=>{
+            $arrayApp.forEach(($element)=>{
             tiempo=tiempo+1000;
-            setTimeout(()=>{
+            
                 //$('.boton').css("background-color","red");
                 //console.log($element);
                 switchfunction($element);
                 console.log($element);
-            },tiempo);
-});
+            });
+        },1000);
+
+        clearInterval(intervalo);
 
 }
 function switchfunction($element){
