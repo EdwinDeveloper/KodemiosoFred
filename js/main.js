@@ -8,7 +8,7 @@ var $arrayUser=[];
 var $contadorJuego=0;
 //Contador de iternacion del usuario al presionar cada boton
 var $contadorUser=0;
-var $contadorEnAumento=2;
+var $contadorEnAumento=1;
 //var bandera=0;
 function start(){
     var $minimo = 1,$maximo=9;
@@ -17,21 +17,20 @@ function start(){
     
          //console.log($numeroRandom);
 
-         //Añadimos el nuevo valor al arreglos
-        
-        console.log($arrayApp);  
+         //Añadimos el nuevo valor al arreglos  
         //console.log($numeroRandom); 
+        $numeroRandom = getRandom($minimo,$maximo);
+        $arrayApp.push($numeroRandom);
         let intervalo = setInterval(()=>{
-            $contadorJuego++; 
+            $contadorJuego++;
+            console.log("ciclo : array "+$contadorJuego); 
                 if($contadorJuego<=$contadorEnAumento){
-                    console.log("jajaja"+$contadorEnAumento);
-                    $numeroRandom = getRandom($minimo,$maximo);
-                        switchfunction($numeroRandom);
-                        $arrayApp.push($numeroRandom);
+                        switchfunction($arrayApp[$contadorJuego-1]);
                 }else{
                     clearInterval(intervalo);
                 }               
         },2000);
+        console.log($arrayApp);
 }
 function switchfunction($element){
     switch($element){
@@ -116,7 +115,6 @@ $('.boton').on('click',(e)=>{
             //Despues de medio segundo, retiramos la clase success
             $divMensaje.removeClass('mensaje-success');
             //cadamos el tamaño actual del arreglo del juego
-            console.log("Tamaño del arreglo : "+$arrayApp.length);
         },500);
     }else{
         //Mensaje error en caso de fallo
@@ -127,16 +125,16 @@ $('.boton').on('click',(e)=>{
     }
     //Nuestro contador para aumentar la posicion
     $contadorUser++;
-    console.log("Contador User : "+$contadorUser);
-    console.log("Contador Aumento : "+$contadorEnAumento);
     if($contadorUser===$contadorEnAumento){
         $contadorEnAumento++;
         $contadorUser=0;
+        $contadorJuego=0;
         $('.main-container').addClass('.extra-main-container');
         setTimeout(()=>{
             $('.main-container').removeClass('.extra-main-container');
             start();
-        },500);
+            console.log("Segundo ciclo");
+        },1000);
     }
 });
 
