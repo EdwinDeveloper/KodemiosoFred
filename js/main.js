@@ -1,10 +1,15 @@
+//variable guardamos numero ramdom
 var $numeroRandom=0;
+//Array para guardar los valores randoms creados
 var $arrayApp=[];
+//
 var $arrayUser=[];
+//Contador de iteraciones del juego (va sumando)
 var $contadorJuego=0;
+//Contador de iternacion del usuario al presionar cada boton
 var $contadorUser=0;
-var tiempo=1000;
-var bandera=0;
+var $contadorEnAumento=2;
+//var bandera=0;
 function start(){
     var $minimo = 1,$maximo=9;
 
@@ -18,16 +23,15 @@ function start(){
         //console.log($numeroRandom); 
         let intervalo = setInterval(()=>{
             $contadorJuego++; 
-                if($contadorJuego<5){
+                if($contadorJuego<=$contadorEnAumento){
+                    console.log("jajaja"+$contadorEnAumento);
                     $numeroRandom = getRandom($minimo,$maximo);
                         switchfunction($numeroRandom);
                         $arrayApp.push($numeroRandom);
-                        console.log($arrayApp);
                 }else{
                     clearInterval(intervalo);
                 }               
         },2000);
-        //clearInterval(intervalo);
 }
 function switchfunction($element){
     switch($element){
@@ -98,14 +102,41 @@ function iluminar(numeroRandom){
 }
 $('.boton').on('click',(e)=>{
     var $a =$(e.target).text();
-    $arrayUser.push(parseInt($a));
+    let $divMensaje=$('.mensaje');
+    //if para verificar si el usuario introduce un valor correcto
     if($a==$arrayApp[$contadorUser]){
-        console.log("Bien Amigo");
-        console.log($contadorUser);
+        //$contadorJuego++;
+        //Añadimos mensaje de correcto
+        $divMensaje.html('BIEN AMIGO');
+        //Añadimos la clase de correcto
+        $divMensaje.addClass('mensaje-success');
+        setTimeout(()=>{
+            //Despues de medio segundo retiramos el mensaje
+            $divMensaje.html('BIENVENIDO');
+            //Despues de medio segundo, retiramos la clase success
+            $divMensaje.removeClass('mensaje-success');
+            //cadamos el tamaño actual del arreglo del juego
+            console.log("Tamaño del arreglo : "+$arrayApp.length);
+        },500);
     }else{
-        console.log("Game Over");
-        console.log($a+"  "+$arrayApp[$contadorUser]);
+        //Mensaje error en caso de fallo
+        $divMensaje.html('GAME OVER');
+        //Añadimos la clase error en caso de fallo del usuario
+        $divMensaje.addClass('mensaje-fail');
+        //Comparamos uno por uno la seleccion del usuario y los del array del jugo
     }
+    //Nuestro contador para aumentar la posicion
     $contadorUser++;
+    console.log("Contador User : "+$contadorUser);
+    console.log("Contador Aumento : "+$contadorEnAumento);
+    if($contadorUser===$contadorEnAumento){
+        $contadorEnAumento++;
+        $contadorUser=0;
+        $('.main-container').addClass('.extra-main-container');
+        setTimeout(()=>{
+            $('.main-container').removeClass('.extra-main-container');
+            start();
+        },500);
+    }
 });
 
