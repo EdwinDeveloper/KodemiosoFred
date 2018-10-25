@@ -1,0 +1,1275 @@
+body {
+  text-align: center;
+}
+body #start-button,
+body #start-test {
+  width: 200px;
+  height: 40px;
+  background-color: black;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+}
+body #start-button:hover,
+body #start-test:hover {
+  background-color: gray;
+}
+body .main-container {
+  width: 40%;
+  height: 500px;
+  background-color: gray;
+  margin: auto auto;
+  display: flex;
+}
+body .main-container .button-container {
+  width: 80%;
+  height: 400px;
+  background-color: black;
+  margin: auto auto;
+  display: inline-block;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  font-size: 2rem;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+
+/*# sourceMappingURL=main.css.map */
