@@ -90,7 +90,7 @@ $('.boton').on('click',(e)=>{
     //if para verificar si el usuario introduce un valor correcto
     console.log("Contador usuario : "+$contadorUser);
     console.log("a : "+$a+" arrayApp : "+$arrayApp[$contadorUser]);
-    if($a==$arrayApp[$contadorUser]){
+    if($a===$arrayApp[$contadorUser]){
         //Añadimos mensaje de correcto
         $divMensaje.html('BIEN AMIGO');
         //Añadimos la clase de correcto
