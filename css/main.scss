@@ -1,5 +1,19 @@
 body{
     text-align: center;
+    #score{
+        margin: auto auto;
+        width: 39%;
+        height: 35px;
+        background-color: black;
+        border:solid 2px rgb(68, 63, 63);
+        text-align: right;
+        label{
+            text-align: left;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color:green;
+        }
+    }
     #start-button,
     #start-test{
         width: 250px;

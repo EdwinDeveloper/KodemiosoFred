@@ -3,12 +3,17 @@ var $numeroRandom=0;
 //Array para guardar los valores randoms creados
 var $arrayApp=[];
 //
+var soundsuccess;
 var $arrayUser=[];
 //Contador de iteraciones del juego (va sumando)
 var $contadorJuego=0;
 //Contador de iternacion del usuario al presionar cada boton
 var $contadorUser=0;
 var $contadorEnAumento=1;
+//Temporizador
+var tiempoUser = setTimeout(()=>{
+
+},3000);
 //var bandera=0;
 function start(){
     var $minimo = 1,$maximo=9;
@@ -90,7 +95,7 @@ $('.boton').on('click',(e)=>{
     //if para verificar si el usuario introduce un valor correcto
     console.log("Contador usuario : "+$contadorUser);
     console.log("a : "+$a+" arrayApp : "+$arrayApp[$contadorUser]);
-    if($a===$arrayApp[$contadorUser]){
+    if($a==$arrayApp[$contadorUser]){
         //Añadimos mensaje de correcto
         $divMensaje.html('BIEN AMIGO');
         //Añadimos la clase de correcto
@@ -111,6 +116,7 @@ $('.boton').on('click',(e)=>{
          $('#start-button').html("START AGAIN");
          $('#start-button').css('background','orange');
         //Añadimos la clase error en caso de fallo del usuario
+        $('#score label').html("Error you are dead");
         $divMensaje.addClass('mensaje-fail');
         //Comparamos uno por uno la seleccion del usuario y los del array del jugo
     }
@@ -121,6 +127,7 @@ $('.boton').on('click',(e)=>{
     console.log("Contador Aumento : "+$contadorEnAumento);
     // console.log("a : "+$a+ "  "+$arrayApp[$contadorUser-1]);
     if($contadorUser===$contadorEnAumento){
+        $('#score label').html($contadorUser);
         $contadorEnAumento++;
         $contadorUser=0;
         $contadorJuego=0;
@@ -141,6 +148,7 @@ $('#start-button').on('click',()=>{
     $contadorEnAumento=1;
     $('.mensaje').removeClass('mensaje-fail');
     $('.mensaje').html('Bienvenido');
+    $('#score label').html("0");
     console.log("Contador Boton Start Juego : "+$contadorJuego);
      $('#start-button').html("START");
      $('#start-button').css('background','black');
@@ -159,5 +167,19 @@ function iluminar(numeroRandom){
     setTimeout(()=>{
 
     },1000);
+}
+function sound(src) {
+    this.sound = document.createElement("audio");
+    this.sound.src = src;
+    this.sound.setAttribute("preload", "auto");
+    this.sound.setAttribute("controls", "none");
+    this.sound.style.display = "none";
+    document.body.appendChild(this.sound);
+    this.play = function(){
+        this.sound.play();
+    }
+    this.stop = function(){
+        this.sound.pause();
+    }
 }
 

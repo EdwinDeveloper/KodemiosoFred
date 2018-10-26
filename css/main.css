@@ -1,6 +1,20 @@
 body {
   text-align: center;
 }
+body #score {
+  margin: auto auto;
+  width: 39%;
+  height: 35px;
+  background-color: black;
+  border: solid 2px #443f3f;
+  text-align: right;
+}
+body #score label {
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: green;
+}
 body #start-button,
 body #start-test {
   width: 250px;
