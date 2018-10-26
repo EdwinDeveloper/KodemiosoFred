@@ -3,7 +3,7 @@ var $numeroRandom=0;
 //Array para guardar los valores randoms creados
 var $arrayApp=[];
 //
-var soundsuccess;
+//var soundsuccess;
 var $arrayUser=[];
 //Contador de iteraciones del juego (va sumando)
 var $contadorJuego=0;
@@ -11,11 +11,32 @@ var $contadorJuego=0;
 var $contadorUser=0;
 var $contadorEnAumento=1;
 //Temporizador
-var tiempoUser = setTimeout(()=>{
+var panicFlag=3;
+var deadTime;
+const starTime = () =>{
+    deadTime = setInterval(()=>{
+        if(panicFlag==0){
+            console.log("GAME OVER");
+        }
+        panicFlag--;
+        console.log("variable bandera: "+panicFlag);
+    },1000);
+}
+const killTime = () =>{
+    clearInterval(deadTime);
+}
+const resetTime = () => {
+    panicFlag=3;
+}
 
-},3000);
+
+
+
+
+
 //var bandera=0;
 function start(){
+    killTime();
     var $minimo = 1,$maximo=9;
 
         //obtenemos el numero random
@@ -27,15 +48,20 @@ function start(){
         $numeroRandom = getRandom($minimo,$maximo);
         $arrayApp.push($numeroRandom);
         let intervalo = setInterval(()=>{
+            killTime();
             $contadorJuego++;
             //console.log("ciclo : array "+$contadorJuego); 
                 if($contadorJuego<=$contadorEnAumento){
                         switchfunction($arrayApp[$contadorJuego-1]);
                 }else{
                     clearInterval(intervalo);
+                }
+                if($contadorUser==$arrayApp.length){
+                    starTime(); 
                 }               
         },2000);
-        console.log($arrayApp);
+        console.log($arrayApp);  
+           
 }
 function switchfunction($element){
     switch($element){
@@ -87,14 +113,15 @@ function switchfunction($element){
     }
 }
 function getRandom($min, $max) {
-    return Math.trunc( Math.random()* ($max - $min) + $min);
+    return Math.trunc( Math.random()*($max - $min) + $min);
 }
 $('.boton').on('click',(e)=>{
+    resetTime();
     var $a =$(e.target).text();
     let $divMensaje=$('.mensaje');
     //if para verificar si el usuario introduce un valor correcto
-    console.log("Contador usuario : "+$contadorUser);
-    console.log("a : "+$a+" arrayApp : "+$arrayApp[$contadorUser]);
+    //console.log("Contador usuario : "+$contadorUser);
+    //console.log("a : "+$a+" arrayApp : "+$arrayApp[$contadorUser]);
     if($a==$arrayApp[$contadorUser]){
         //Añadimos mensaje de correcto
         $divMensaje.html('BIEN AMIGO');
@@ -123,10 +150,11 @@ $('.boton').on('click',(e)=>{
     //Nuestro contador para aumentar la posicion
     $contadorUser++;
 
-    console.log("Contador user : "+$contadorUser);
-    console.log("Contador Aumento : "+$contadorEnAumento);
-    // console.log("a : "+$a+ "  "+$arrayApp[$contadorUser-1]);
+    //console.log("Contador user : "+$contadorUser);
+    //console.log("Contador Aumento : "+$contadorEnAumento);
+    console.log("a : "+$a+ " : "+$arrayApp[$contadorUser-1]);
     if($contadorUser===$contadorEnAumento){
+        killTime();
         $('#score label').html($contadorUser);
         $contadorEnAumento++;
         $contadorUser=0;
