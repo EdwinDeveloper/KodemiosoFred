@@ -140,7 +140,7 @@ $('.boton').on('click',(e)=>{
         $contadorJuego=0;
         $arrayApp=[];
         $divMensaje.html('GAME OVER');
-         $('#start-button').html("START AGAIN");
+         $('#start-button').html("Start again");
          $('#start-button').css('background','orange');
         //Añadimos la clase error en caso de fallo del usuario
         $('#score label').html("Error you are dead");
@@ -178,7 +178,7 @@ $('#start-button').on('click',()=>{
     $('.mensaje').html('Bienvenido');
     $('#score label').html("0");
     console.log("Contador Boton Start Juego : "+$contadorJuego);
-     $('#start-button').html("START");
+     $('#start-button').html("Start");
      $('#start-button').css('background','black');
     // $contadorUser=0;
     // $contadorJuego=0;

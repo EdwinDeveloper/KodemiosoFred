@@ -5,7 +5,7 @@ body{
         width: 39%;
         height: 35px;
         background-color: black;
-        border:solid 2px rgb(68, 63, 63);
+        border:solid 4px rgb(68, 63, 63);
         text-align: right;
         label{
             text-align: left;
@@ -13,11 +13,14 @@ body{
             font-weight: bold;
             color:green;
         }
+        &:hover{
+            cursor: pointer;
+        }
     }
-    #start-button,
-    #start-test{
-        width: 250px;
+    #start-button{
+        width: 40%;
         height: 40px;
+        border-radius: 40%;
         background-color: black;
         font-size: 2rem;
         text-align: center;
@@ -39,6 +42,7 @@ body{
     margin: auto auto;
     background-color: orange;
     color: black;
+    border-radius: 45%;
     &:hover{
         background-color: rgb(143, 100, 21);
         color: white;
@@ -67,6 +71,7 @@ body{
     background-color: gray;
     margin:auto auto;
     display: flex;
+    border-radius: 10%;
     .button-container{
         $color-1:rgb(80, 7, 7);
         $color-2:rgb(0, 41, 0);
@@ -271,10 +276,87 @@ body{
             .nueva-clase{
                 background-color: #720909;
             }
+            @media only screen and (max-width :600px) and (min-width: 900px){
+                .boton{
+                    width: 50px;
+                    height: 32%;
+                }
+            }
         }
     }
 }
 .extra-main-container{
     background-color: green;
 }
+}
+@media only screen and (min-width :300px) and (max-width: 600px){
+    body{
+        #score{
+            width: 90%;
+        }
+        #start-button{
+            width: 90%;
+            height:35px;
+        }
+        .main-container{
+            width: 90%;
+            height: 450px;
+            .button-container{
+                .boton{
+                    width: 30%;
+                    height: 30%;
+                }
+            }
+        }
+        .mensaje{
+            width: 90%;
+        }
+    }
+}
+@media only screen and (min-width :601px) and (max-width: 949px){
+    body{
+        #score{
+            width: 50%;
+        }
+        #start-button{
+            width: 50%;
+        }
+        .main-container{
+            width: 50%;
+            .button-container{
+                .boton{
+                    width: 30%;
+                    height: 30%;
+                }
+            }
+        }
+        .mensaje{
+            width: 50%;
+        }
+    }
+}
+@media only screen and(max-width: 299px){
+    body{
+        #score{
+            width: 100%;
+        }
+        #start-button{
+            width: 100%;
+        }
+        .main-container{
+            width: 100%;
+            height: 450px;
+            .button-container{
+                .boton{
+                    width: 29%;
+                    height: 29%;
+                    border-radius: 20%;
+                }
+            }
+        }
+        .mensaje{
+            width: 100%;
+            font-size: 1.2rem;
+        }
+    }
 }

@@ -6,7 +6,7 @@ body #score {
   width: 39%;
   height: 35px;
   background-color: black;
-  border: solid 2px #443f3f;
+  border: solid 4px #443f3f;
   text-align: right;
 }
 body #score label {
@@ -15,18 +15,20 @@ body #score label {
   font-weight: bold;
   color: green;
 }
-body #start-button,
-body #start-test {
-  width: 250px;
+body #score:hover {
+  cursor: pointer;
+}
+body #start-button {
+  width: 40%;
   height: 40px;
+  border-radius: 40%;
   background-color: black;
   font-size: 2rem;
   text-align: center;
   margin: 0 auto;
   color: white;
 }
-body #start-button:hover,
-body #start-test:hover {
+body #start-button:hover {
   cursor: pointer;
   background-color: gray;
 }
@@ -41,6 +43,7 @@ body .mensaje {
   margin: auto auto;
   background-color: orange;
   color: black;
+  border-radius: 45%;
 }
 body .mensaje:hover {
   background-color: #8f6415;
@@ -69,6 +72,7 @@ body .main-container {
   background-color: gray;
   margin: auto auto;
   display: flex;
+  border-radius: 10%;
 }
 body .main-container .button-container {
   width: 80%;
@@ -261,189 +265,11 @@ body .main-container .button-container .extra-9 {
 body .main-container .button-container .nueva-clase {
   background-color: #720909;
 }
-body .main-container .button-container .boton {
-  display: flex;
-}
-body .main-container .button-container .boton label {
-  font-size: 3rem;
-  margin: auto auto;
-}
-body .main-container .button-container .boton label:hover {
-  font-size: 4rem;
-}
-body .main-container .button-container .button-1 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #cc4848;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-1:hover {
-  background-color: #631010;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-2 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #36c036;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-2:hover {
-  background-color: #0f440f;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-3 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: white;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-3:hover {
-  background-color: #5e5d5d;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-4 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #be35be;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-4:hover {
-  background-color: #521552;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-5 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: yellow;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-5:hover {
-  background-color: #676718;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-6 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #5050ff;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-6:hover {
-  background-color: #222271;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-7 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffdc9c;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-7:hover {
-  background-color: #e19b19;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-8 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffc964;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-8:hover {
-  background-color: #6f582c;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-9 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #b7e5f7;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-9:hover {
-  background-color: #4cb9e4;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .extra-1 {
-  background-color: #500707;
-  color: white;
-}
-body .main-container .button-container .extra-2 {
-  background-color: #002900;
-  color: white;
-}
-body .main-container .button-container .extra-3 {
-  background-color: #525151;
-  color: white;
-}
-body .main-container .button-container .extra-4 {
-  background-color: #290429;
-  color: white;
-}
-body .main-container .button-container .extra-5 {
-  background-color: #727204;
-  color: white;
-}
-body .main-container .button-container .extra-6 {
-  background-color: #0b0b3b;
-  color: white;
-}
-body .main-container .button-container .extra-7 {
-  background-color: #52390a;
-  color: white;
-}
-body .main-container .button-container .extra-8 {
-  background-color: #0f475e;
-  color: white;
-}
-body .main-container .button-container .extra-9 {
-  background-color: #575252;
-  color: white;
-}
-body .main-container .button-container .nueva-clase {
-  background-color: #720909;
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
 }
 body .main-container .button-container .boton {
   display: flex;
@@ -629,189 +455,11 @@ body .main-container .button-container .extra-9 {
 body .main-container .button-container .nueva-clase {
   background-color: #720909;
 }
-body .main-container .button-container .boton {
-  display: flex;
-}
-body .main-container .button-container .boton label {
-  font-size: 3rem;
-  margin: auto auto;
-}
-body .main-container .button-container .boton label:hover {
-  font-size: 4rem;
-}
-body .main-container .button-container .button-1 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #cc4848;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-1:hover {
-  background-color: #631010;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-2 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #36c036;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-2:hover {
-  background-color: #0f440f;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-3 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: white;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-3:hover {
-  background-color: #5e5d5d;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-4 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #be35be;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-4:hover {
-  background-color: #521552;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-5 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: yellow;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-5:hover {
-  background-color: #676718;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-6 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #5050ff;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-6:hover {
-  background-color: #222271;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-7 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffdc9c;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-7:hover {
-  background-color: #e19b19;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-8 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffc964;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-8:hover {
-  background-color: #6f582c;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-9 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #b7e5f7;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-9:hover {
-  background-color: #4cb9e4;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .extra-1 {
-  background-color: #500707;
-  color: white;
-}
-body .main-container .button-container .extra-2 {
-  background-color: #002900;
-  color: white;
-}
-body .main-container .button-container .extra-3 {
-  background-color: #525151;
-  color: white;
-}
-body .main-container .button-container .extra-4 {
-  background-color: #290429;
-  color: white;
-}
-body .main-container .button-container .extra-5 {
-  background-color: #727204;
-  color: white;
-}
-body .main-container .button-container .extra-6 {
-  background-color: #0b0b3b;
-  color: white;
-}
-body .main-container .button-container .extra-7 {
-  background-color: #52390a;
-  color: white;
-}
-body .main-container .button-container .extra-8 {
-  background-color: #0f475e;
-  color: white;
-}
-body .main-container .button-container .extra-9 {
-  background-color: #575252;
-  color: white;
-}
-body .main-container .button-container .nueva-clase {
-  background-color: #720909;
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
 }
 body .main-container .button-container .boton {
   display: flex;
@@ -997,189 +645,11 @@ body .main-container .button-container .extra-9 {
 body .main-container .button-container .nueva-clase {
   background-color: #720909;
 }
-body .main-container .button-container .boton {
-  display: flex;
-}
-body .main-container .button-container .boton label {
-  font-size: 3rem;
-  margin: auto auto;
-}
-body .main-container .button-container .boton label:hover {
-  font-size: 4rem;
-}
-body .main-container .button-container .button-1 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #cc4848;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-1:hover {
-  background-color: #631010;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-2 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #36c036;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-2:hover {
-  background-color: #0f440f;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-3 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: white;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-3:hover {
-  background-color: #5e5d5d;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-4 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #be35be;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-4:hover {
-  background-color: #521552;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-5 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: yellow;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-5:hover {
-  background-color: #676718;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-6 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #5050ff;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-6:hover {
-  background-color: #222271;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-7 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffdc9c;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-7:hover {
-  background-color: #e19b19;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-8 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffc964;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-8:hover {
-  background-color: #6f582c;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-9 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #b7e5f7;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-9:hover {
-  background-color: #4cb9e4;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .extra-1 {
-  background-color: #500707;
-  color: white;
-}
-body .main-container .button-container .extra-2 {
-  background-color: #002900;
-  color: white;
-}
-body .main-container .button-container .extra-3 {
-  background-color: #525151;
-  color: white;
-}
-body .main-container .button-container .extra-4 {
-  background-color: #290429;
-  color: white;
-}
-body .main-container .button-container .extra-5 {
-  background-color: #727204;
-  color: white;
-}
-body .main-container .button-container .extra-6 {
-  background-color: #0b0b3b;
-  color: white;
-}
-body .main-container .button-container .extra-7 {
-  background-color: #52390a;
-  color: white;
-}
-body .main-container .button-container .extra-8 {
-  background-color: #0f475e;
-  color: white;
-}
-body .main-container .button-container .extra-9 {
-  background-color: #575252;
-  color: white;
-}
-body .main-container .button-container .nueva-clase {
-  background-color: #720909;
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
 }
 body .main-container .button-container .boton {
   display: flex;
@@ -1365,189 +835,11 @@ body .main-container .button-container .extra-9 {
 body .main-container .button-container .nueva-clase {
   background-color: #720909;
 }
-body .main-container .button-container .boton {
-  display: flex;
-}
-body .main-container .button-container .boton label {
-  font-size: 3rem;
-  margin: auto auto;
-}
-body .main-container .button-container .boton label:hover {
-  font-size: 4rem;
-}
-body .main-container .button-container .button-1 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #cc4848;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-1:hover {
-  background-color: #631010;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-2 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #36c036;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-2:hover {
-  background-color: #0f440f;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-3 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: white;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-3:hover {
-  background-color: #5e5d5d;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-4 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #be35be;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-4:hover {
-  background-color: #521552;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-5 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: yellow;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-5:hover {
-  background-color: #676718;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-6 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #5050ff;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-6:hover {
-  background-color: #222271;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-7 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffdc9c;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-7:hover {
-  background-color: #e19b19;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-8 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #ffc964;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-8:hover {
-  background-color: #6f582c;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .button-9 {
-  width: 32%;
-  height: 130px;
-  border-radius: 10%;
-  float: left;
-  background-color: #b7e5f7;
-  text-align: center;
-  justify-content: center;
-  border: solid 2px gray;
-}
-body .main-container .button-container .button-9:hover {
-  background-color: #4cb9e4;
-  color: white;
-  cursor: pointer;
-}
-body .main-container .button-container .extra-1 {
-  background-color: #500707;
-  color: white;
-}
-body .main-container .button-container .extra-2 {
-  background-color: #002900;
-  color: white;
-}
-body .main-container .button-container .extra-3 {
-  background-color: #525151;
-  color: white;
-}
-body .main-container .button-container .extra-4 {
-  background-color: #290429;
-  color: white;
-}
-body .main-container .button-container .extra-5 {
-  background-color: #727204;
-  color: white;
-}
-body .main-container .button-container .extra-6 {
-  background-color: #0b0b3b;
-  color: white;
-}
-body .main-container .button-container .extra-7 {
-  background-color: #52390a;
-  color: white;
-}
-body .main-container .button-container .extra-8 {
-  background-color: #0f475e;
-  color: white;
-}
-body .main-container .button-container .extra-9 {
-  background-color: #575252;
-  color: white;
-}
-body .main-container .button-container .nueva-clase {
-  background-color: #720909;
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
 }
 body .main-container .button-container .boton {
   display: flex;
@@ -1732,9 +1024,835 @@ body .main-container .button-container .extra-9 {
 }
 body .main-container .button-container .nueva-clase {
   background-color: #720909;
+}
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
+}
+body .main-container .button-container .boton {
+  display: flex;
+}
+body .main-container .button-container .boton label {
+  font-size: 3rem;
+  margin: auto auto;
+}
+body .main-container .button-container .boton label:hover {
+  font-size: 4rem;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  background-color: #631010;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  background-color: #0f440f;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  background-color: #5e5d5d;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  background-color: #521552;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  background-color: #676718;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  background-color: #222271;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  background-color: #e19b19;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  background-color: #6f582c;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  background-color: #4cb9e4;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+  color: white;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+  color: white;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+  color: white;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+  color: white;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+  color: white;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+  color: white;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+  color: white;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+  color: white;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+  color: white;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
+}
+body .main-container .button-container .boton {
+  display: flex;
+}
+body .main-container .button-container .boton label {
+  font-size: 3rem;
+  margin: auto auto;
+}
+body .main-container .button-container .boton label:hover {
+  font-size: 4rem;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  background-color: #631010;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  background-color: #0f440f;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  background-color: #5e5d5d;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  background-color: #521552;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  background-color: #676718;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  background-color: #222271;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  background-color: #e19b19;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  background-color: #6f582c;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  background-color: #4cb9e4;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+  color: white;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+  color: white;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+  color: white;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+  color: white;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+  color: white;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+  color: white;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+  color: white;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+  color: white;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+  color: white;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
+}
+body .main-container .button-container .boton {
+  display: flex;
+}
+body .main-container .button-container .boton label {
+  font-size: 3rem;
+  margin: auto auto;
+}
+body .main-container .button-container .boton label:hover {
+  font-size: 4rem;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  background-color: #631010;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  background-color: #0f440f;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  background-color: #5e5d5d;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  background-color: #521552;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  background-color: #676718;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  background-color: #222271;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  background-color: #e19b19;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  background-color: #6f582c;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  background-color: #4cb9e4;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+  color: white;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+  color: white;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+  color: white;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+  color: white;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+  color: white;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+  color: white;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+  color: white;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+  color: white;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+  color: white;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
+}
+body .main-container .button-container .boton {
+  display: flex;
+}
+body .main-container .button-container .boton label {
+  font-size: 3rem;
+  margin: auto auto;
+}
+body .main-container .button-container .boton label:hover {
+  font-size: 4rem;
+}
+body .main-container .button-container .button-1 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #cc4848;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-1:hover {
+  background-color: #631010;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-2 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #36c036;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-2:hover {
+  background-color: #0f440f;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-3 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-3:hover {
+  background-color: #5e5d5d;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-4 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #be35be;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-4:hover {
+  background-color: #521552;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-5 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-5:hover {
+  background-color: #676718;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-6 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #5050ff;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-6:hover {
+  background-color: #222271;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-7 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffdc9c;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-7:hover {
+  background-color: #e19b19;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-8 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #ffc964;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-8:hover {
+  background-color: #6f582c;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .button-9 {
+  width: 32%;
+  height: 130px;
+  border-radius: 10%;
+  float: left;
+  background-color: #b7e5f7;
+  text-align: center;
+  justify-content: center;
+  border: solid 2px gray;
+}
+body .main-container .button-container .button-9:hover {
+  background-color: #4cb9e4;
+  color: white;
+  cursor: pointer;
+}
+body .main-container .button-container .extra-1 {
+  background-color: #500707;
+  color: white;
+}
+body .main-container .button-container .extra-2 {
+  background-color: #002900;
+  color: white;
+}
+body .main-container .button-container .extra-3 {
+  background-color: #525151;
+  color: white;
+}
+body .main-container .button-container .extra-4 {
+  background-color: #290429;
+  color: white;
+}
+body .main-container .button-container .extra-5 {
+  background-color: #727204;
+  color: white;
+}
+body .main-container .button-container .extra-6 {
+  background-color: #0b0b3b;
+  color: white;
+}
+body .main-container .button-container .extra-7 {
+  background-color: #52390a;
+  color: white;
+}
+body .main-container .button-container .extra-8 {
+  background-color: #0f475e;
+  color: white;
+}
+body .main-container .button-container .extra-9 {
+  background-color: #575252;
+  color: white;
+}
+body .main-container .button-container .nueva-clase {
+  background-color: #720909;
+}
+@media only screen and (max-width: 600px) and (min-width: 900px) {
+  body .main-container .button-container .boton {
+    width: 50px;
+    height: 32%;
+  }
 }
 body .extra-main-container {
   background-color: green;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  body #score {
+    width: 90%;
+  }
+  body #start-button {
+    width: 90%;
+    height: 35px;
+  }
+  body .main-container {
+    width: 90%;
+    height: 450px;
+  }
+  body .main-container .button-container .boton {
+    width: 30%;
+    height: 30%;
+  }
+  body .mensaje {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 949px) {
+  body #score {
+    width: 50%;
+  }
+  body #start-button {
+    width: 50%;
+  }
+  body .main-container {
+    width: 50%;
+  }
+  body .main-container .button-container .boton {
+    width: 30%;
+    height: 30%;
+  }
+  body .mensaje {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 299px) {
+  body #score {
+    width: 100%;
+  }
+  body #start-button {
+    width: 100%;
+  }
+  body .main-container {
+    width: 100%;
+    height: 450px;
+  }
+  body .main-container .button-container .boton {
+    width: 29%;
+    height: 29%;
+    border-radius: 20%;
+  }
+  body .mensaje {
+    width: 100%;
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
