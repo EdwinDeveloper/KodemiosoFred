@@ -123,6 +123,7 @@ $('.boton').on('click',(e)=>{
     //console.log("Contador usuario : "+$contadorUser);
     //console.log("a : "+$a+" arrayApp : "+$arrayApp[$contadorUser]);
     if($a==$arrayApp[$contadorUser]){
+        $contadorUser++;
         //Añadimos mensaje de correcto
         $divMensaje.html('BIEN AMIGO');
         //Añadimos la clase de correcto
@@ -148,11 +149,10 @@ $('.boton').on('click',(e)=>{
         //Comparamos uno por uno la seleccion del usuario y los del array del jugo
     }
     //Nuestro contador para aumentar la posicion
-    $contadorUser++;
 
-    //console.log("Contador user : "+$contadorUser);
+    console.log("Contador user : "+$contadorUser);
     //console.log("Contador Aumento : "+$contadorEnAumento);
-    console.log("a : "+$a+ " : "+$arrayApp[$contadorUser-1]);
+    //console.log("a : "+$a+ " : "+$arrayApp[$contadorUser-1]);
     if($contadorUser===$contadorEnAumento){
         killTime();
         $('#score label').html($contadorUser);
